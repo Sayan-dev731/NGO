@@ -1,0 +1,28 @@
+.w-webflow-badge,
+a[href^="https://webflow.com?utm_"],
+div[aria-label="Made in Webflow"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    z-index: -99999 !important;
+}
+
+.logo,
+.alternate-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #333333;
+}
+
+.alternate-logo {
+    display: none;
+}
+
+/* Show alternate logo on scroll or when needed */
+.w--current .alternate-logo {
+    display: block;
+    color: #ffffff;
+}
