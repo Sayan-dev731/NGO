@@ -328,7 +328,7 @@
                     <!-- Individual Registration -->
                     <div class="registration-form">
                         <h4 class="form-title">Individual Registration</h4>
-                        <form class="w-form">
+                        <form class="w-form" id="individualForm" onsubmit="handleIndividualSubmit(event)">
                             <div class="form-field-wrapper">
                                 <input type="text" class="modern-input w-input" maxlength="256" name="firstName"
                                     placeholder="First Name*" required />
@@ -350,7 +350,7 @@
                     <!-- Organization Registration -->
                     <div class="registration-form">
                         <h4 class="form-title">For Companies and Organizations</h4>
-                        <form class="w-form">
+                        <form class="w-form" id="organizationForm" onsubmit="handleOrganizationSubmit(event)">
                             <div class="form-field-wrapper">
                                 <h5 class="form-section-title">Organization Details</h5>
                                 <input type="text" class="modern-input w-input" maxlength="256" name="orgName"
@@ -517,6 +517,7 @@
     <script src="https://assets-global.website-files.com/63b8850480985b59eff84f65/js/webflow.a0a9e3722.js"
         type="text/javascript"></script>
     <script src="assests/js/navigation.js"></script>
+    <script src="assests/js/forms.js"></script>
 </body>
 
 </html>
