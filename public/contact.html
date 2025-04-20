@@ -11,6 +11,7 @@
     <meta content="Lovelyacts - Webflow Ecommerce Website Template" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
+    <link rel="stylesheet" href="assests/css/style.css">
     <link href="https://assets-global.website-files.com/63b8850480985b59eff84f65/css/lovelyacts.webflow.7a588f75f.css"
         rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -54,12 +55,8 @@
             <div class="announcement-container">
                 <div class="announcement-flex-div">
                     <div class="announcement-text">
-                        Drop us a line <a href="mailto:dorianhoxha87@gmail.com?subject=Template%20questions"
-                            class="announcement-link">dorianhoxha87@gmail.com</a>
-                    </div>
-                    <div class="announcement-text">
-                        View More <a href="https://webflow.com/templates/designers/dorian-hoxha"
-                            class="announcement-link">Templates</a>
+                        Drop us a line <a href="mailto:sayancodder731@gmail.com?subject=Template%20questions"
+                            class="announcement-link">sayancodder731@gmail.com</a>
                     </div>
                 </div>
                 <div data-w-id="fe8c8a16-250d-d725-9b13-21cc41fa62a0" class="annoncement-close-icon">
@@ -132,54 +129,48 @@
                         <div class="customers-content">
                             <div class="la-form-component w-form">
                                 <form id="wf-form-Contact-form" name="wf-form-Contact-form" data-name="Contact form"
-                                    method="get" class="la-contact-form" data-wf-page-id="63bb4f19e6b85e32747f413d"
+                                    method="post" class="la-contact-form" data-wf-page-id="63bb4f19e6b85e32747f413d"
                                     data-wf-element-id="dbf6adea-810d-dad0-4fbb-7b0035739744">
+                                    <div id="form-message" class="form-message"></div>
                                     <div class="la-form-field">
                                         <div class="la-form-field-wrapper">
-                                            <label for="Contact-first-name-2" class="la-field-label">First name</label>
-                                            <input class="la-form-input w-input" maxlength="256"
-                                                name="Contact-first-name-2" data-name="Contact First Name 2"
-                                                placeholder="First name" type="text" id="Contact-first-name-2"
+                                            <label for="Contact-name" class="la-field-label">Full Name</label>
+                                            <input class="la-form-input w-input" maxlength="256" name="name"
+                                                placeholder="Your full name" type="text" id="Contact-name"
                                                 required="" />
                                         </div>
                                         <div class="la-form-field-wrapper">
-                                            <label for="Contact-last-name-2" class="la-field-label">Last name</label>
-                                            <input class="la-form-input w-input" maxlength="256"
-                                                name="Contact-last-name-2" data-name="Contact Last Name 2"
-                                                placeholder="Last name" type="text" id="Contact-last-name-2"
+                                            <label for="Contact-address" class="la-field-label">Address</label>
+                                            <input class="la-form-input w-input" maxlength="256" name="address"
+                                                placeholder="Your address" type="text" id="Contact-address"
                                                 required="" />
                                         </div>
                                     </div>
                                     <div class="la-form-field">
                                         <div class="la-form-field-wrapper">
-                                            <label for="Contact-email-2" class="la-field-label">Email</label>
-                                            <input class="la-form-input w-input" maxlength="256" name="Contact-email-2"
-                                                data-name="Contact Email 2" placeholder="lastname@email.com"
-                                                type="email" id="Contact-email-2" required="" />
+                                            <label for="Contact-email" class="la-field-label">Email</label>
+                                            <input class="la-form-input w-input" maxlength="256" name="email"
+                                                placeholder="your.email@example.com" type="email" id="Contact-email"
+                                                required="" />
                                         </div>
                                         <div class="la-form-field-wrapper">
-                                            <label for="Contact-phone-2" class="la-field-label">Phone number</label>
-                                            <input class="la-form-input w-input" maxlength="256" name="Contact-phone-2"
-                                                data-name="Contact Phone 2" placeholder="+1 (123) 456-7895" type="tel"
-                                                id="Contact-phone-2" required="" />
+                                            <label for="Contact-phone" class="la-field-label">Phone number</label>
+                                            <input class="la-form-input w-input" maxlength="256" name="phone"
+                                                placeholder="+1 (123) 456-7895" type="tel" id="Contact-phone"
+                                                required="" />
                                         </div>
                                     </div>
                                     <div class="la-form-field-wrapper">
-                                        <label for="Contact-select-2" class="la-field-label">Select a topic</label>
-                                        <select id="Contact-select-2" name="Contact-select-2"
-                                            data-name="Contact Select 2" required=""
-                                            class="la-form-input select w-select">
-                                            <option value="">Select one...</option>
-                                            <option value="First">First Choice</option>
-                                            <option value="Second">Second Choice</option>
-                                            <option value="Third">Third Choice</option>
-                                        </select>
+                                        <label for="Contact-subject" class="la-field-label">Subject</label>
+                                        <input class="la-form-input w-input" maxlength="256" name="subject"
+                                            placeholder="Message subject" type="text" id="Contact-subject"
+                                            required="" />
                                     </div>
                                     <div class="la-form-field-wrapper">
-                                        <label for="Contact-message-2" class="la-field-label">Leave us a message</label>
-                                        <textarea id="Contact-message-2" name="Contact-message-2" maxlength="5000"
-                                            data-name="Contact Message 2" placeholder="Please type your message here..."
-                                            required="" class="la-form-input text-area w-input"></textarea>
+                                        <label for="Contact-message" class="la-field-label">Your Message</label>
+                                        <textarea id="Contact-message" name="message" maxlength="5000"
+                                            placeholder="Please type your message here..." required=""
+                                            class="la-form-input text-area w-input"></textarea>
                                     </div>
                                     <div id="w-node-dbf6adea-810d-dad0-4fbb-7b003573975f-747f413d"
                                         class="la-form-button-wrapper">
@@ -188,12 +179,6 @@
                                             class="btn-primary w-button" value="Send message" />
                                     </div>
                                 </form>
-                                <div class="success-message w-form-done">
-                                    <div class="success-text">Thank you! Your submission has been received!</div>
-                                </div>
-                                <div class="error-message w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -501,6 +486,7 @@
     <script src="https://assets-global.website-files.com/63b8850480985b59eff84f65/js/webflow.a0a9e3722.js"
         type="text/javascript"></script>
     <script src="assests/js/navigation.js"></script>
+    <script src="assests/js/contact.js"></script>
 </body>
 
 </html>
