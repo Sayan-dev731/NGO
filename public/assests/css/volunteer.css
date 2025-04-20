@@ -1,0 +1,107 @@
+.la-volunteer-container {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 48px;
+    backdrop-filter: blur(10px);
+}
+
+.la-volunteer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.la-volunteer-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.volunteer-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.modern-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #e66621;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.modern-input.textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.6;
+    font-family: inherit;
+    padding: 16px 20px;
+}
+
+.modern-input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modern-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.volunteer-button-wrapper {
+    text-align: center;
+}
+
+.volunteer-submit {
+    background-color: #ff6803;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-submit .la-button-name {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.volunteer-submit .la-icon-button {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .la-volunteer-container {
+        padding: 30px 20px;
+    }
+}
