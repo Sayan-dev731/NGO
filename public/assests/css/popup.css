@@ -1,0 +1,148 @@
+.project-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+    overflow-y: auto;
+    transition: background-color 0.3s ease;
+}
+
+.project-popup.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-content.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Card hover effects */
+.la-feature-card.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+}
+
+.la-feature-card.clickable:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.la-feature-card.clickable .la-icon-box {
+    transition: transform 0.3s ease;
+}
+
+.la-feature-card.clickable:hover .la-icon-box {
+    transform: scale(1.1);
+}
+
+/* Close button animation */
+.close-popup {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-popup:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg);
+}
+
+/* Content fade in animations */
+.popup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.popup-header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: 0.2s;
+}
+
+.popup-content.active .popup-header img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.popup-content.active .popup-header h2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup-body {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.popup-body p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: 0.4s;
+}
+
+.popup-content.active .popup-body p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup-footer {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.popup-content.active .popup-footer {
+    opacity: 1;
+    transform: translateY(0);
+}
